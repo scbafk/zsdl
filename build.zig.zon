@@ -11,14 +11,14 @@
         "LICENSE",
     },
     .dependencies = .{
-        .@"sdl2-prebuilt-macos" = .{
-            .url = "https://github.com/zig-gamedev/sdl2-prebuilt-macos/archive/f14773fa3de719b3a399b854c31eb4139d63842f.tar.gz",
-            .hash = "12205cb2da6fb4a7fcf28b9cd27b60aaf12f4d4a55be0260b1ae36eaf93ca5a99f03",
+        .sdl2_prebuilt_macos = .{
+            .url = "https://github.com/scbafk/sdl2-prebuilt-macos/archive/4d8dcfecdd55c2569c42339b3084dd2105e8880d.tar.gz",
+            .hash = "sdl2_prebuilt_macos-0.2.0-AAAAAGYq2QDTRcSNNoIf55MNEt-km4Wfhs8YDMzctZcG",
             .lazy = true,
         },
-        .@"sdl2-prebuilt-x86_64-windows-gnu" = .{
-            .url = "https://github.com/zig-gamedev/sdl2-prebuilt-x86_64-windows-gnu/archive/8143e2a5c28dbace399cbff14c3e8749a1afd418.tar.gz",
-            .hash = "1220ade6b84d06d73bf83cef22c73ec4abc21a6d50b9f48875f348b7942c80dde11b",
+        .sdl2_prebuilt_x86_64_windows_gnu = .{
+            .url = "https://github.com/scbafk/sdl2-prebuilt-x86_64-windows-gnu/archive/38f04f7a061b68941e77f92052ffafccd0e035d7.tar.gz",
+            .hash = "sdl2_prebuilt_x86_64_windows_gnu-0.2.0-AAAAANKVaQBI-RiVjn2g-SxayrfK2m1I4lj9YBbBddnY",
             .lazy = true,
         },
         .sdl2_prebuilt_x86_64_linux_gnu = .{
@@ -26,14 +26,14 @@
             .hash = "sdl2_prebuilt_x86_64_linux_gnu-0.2.0-AAAAAJHSHwDiZstHgXzdDZeSUN6ew1jM2kkCIqkM5t2H",
             .lazy = true,
         },
-        .@"sdl3-prebuilt-macos" = .{
-            .url = "https://github.com/zig-gamedev/sdl3-prebuilt-macos/archive/07985b3c3eb79277ae11a3dcf2b17d68bfe8276f.tar.gz",
-            .hash = "1220f4a00b613878775ad71299fff1964f3c6e7e21add7a9e82f5f25897c7ac2368e",
+        .sdl3_prebuilt_macos = .{
+            .url = "https://github.com/scbafk/sdl3-prebuilt-macos/archive/ee0b16347ccbb0bf551f2e9eaf98daaa7cae40ac.tar.gz",
+            .hash = "sdl3_prebuilt_macos-0.2.0-AAAAACuUdwDOty2OSg3jXUW9U8dX0auKJYvMZHkPVcVl",
             .lazy = true,
         },
-        .@"sdl3-prebuilt-x86_64-windows-gnu" = .{
-            .url = "https://github.com/zig-gamedev/sdl3-prebuilt-x86_64-windows-gnu/archive/bd506c7cf80c4bb4876a169f77ecaa0f12824c5.tar.gz",
-            .hash = "122073ccc1be25223aed7eb9590e81eed67835901cd18ebf2314eb9cfe5bbef595cf",
+        .sdl3_prebuilt_x86_64_windows_gnu = .{
+            .url = "https://github.com/PMarcL/sdl3-prebuilt-x86_64-windows-gnu/archive/c9aa473dcce9f0c7861f8baf02925593bcc97353.tar.gz",
+            .hash = "sdl3_prebuilt_x86_64_windows_gnu-0.1.0-AAAAAIvmJADE-xqi2Lmpxbo9wG5B13z77R0JFlQzTOdM",
             .lazy = true,
         },
         .sdl3_prebuilt_x86_64_linux_gnu = .{
