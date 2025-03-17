@@ -192,7 +192,7 @@ pub const prebuilt_sdl2 = struct {
             },
             .linux => {
                 if (target.cpu.arch.isX86()) {
-                    if (b.lazyDependency("sdl2-prebuilt-x86_64-linux-gnu", .{})) |sdl2_prebuilt| {
+                    if (b.lazyDependency(@tagName(.sdl2_prebuilt_x86_64_linux_gnu), .{})) |sdl2_prebuilt| {
                         compile_step.addLibraryPath(sdl2_prebuilt.path("lib"));
                     }
                 }
@@ -245,7 +245,7 @@ pub const prebuilt_sdl2 = struct {
             },
             .linux => {
                 if (target.cpu.arch.isX86()) {
-                    if (b.lazyDependency("sdl2-prebuilt-x86_64-linux-gnu", .{})) |sdl2_prebuilt| {
+                    if (b.lazyDependency(@tagName(.sdl2_prebuilt_x86_64_linux_gnu), .{})) |sdl2_prebuilt| {
                         install_step.dependOn(&b.addInstallFileWithDir(
                             sdl2_prebuilt.path("lib/libSDL2.so"),
                             install_dir,
@@ -312,7 +312,7 @@ pub const prebuilt_sdl3 = struct {
             },
             .linux => {
                 if (target.cpu.arch.isX86()) {
-                    if (b.lazyDependency("sdl3-prebuilt-x86_64-linux-gnu", .{})) |sdl3_prebuilt| {
+                    if (b.lazyDependency(@tagName(.sdl3_prebuilt_x86_64_linux_gnu), .{})) |sdl3_prebuilt| {
                         compile_step.addLibraryPath(sdl3_prebuilt.path("lib"));
                     }
                 }
@@ -349,7 +349,7 @@ pub const prebuilt_sdl3 = struct {
             },
             .linux => {
                 if (target.cpu.arch.isX86()) {
-                    if (b.lazyDependency("sdl3-prebuilt-x86_64-linux-gnu", .{})) |sdl3_prebuilt| {
+                    if (b.lazyDependency(@tagName(.sdl3_prebuilt_x86_64_linux_gnu), .{})) |sdl3_prebuilt| {
                         return &b.addInstallFileWithDir(
                             sdl3_prebuilt.path("lib/libSDL3.so"),
                             install_dir,
